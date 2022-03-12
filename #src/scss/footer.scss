@@ -6,10 +6,7 @@ footer {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		height: 125px;
-		@media (max-width: ($md4+px)) {
-			height: 90px;
-		}
+		height: 70px;
 		&__column {
 			img {
 				width: 50px;

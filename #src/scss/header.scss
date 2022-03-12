@@ -214,6 +214,9 @@ header {
 		}
 		&_contacts {
 			margin: 0px 15px 25px 15px;
+			@media (max-width: ($md2+px)) {
+				margin: 0px 15px 15px 15px;
+			}
 			& h2 {
 				text-align: center;
 			}
@@ -291,16 +294,13 @@ header {
 		@media (max-width: ($md3+px)) {
 			justify-content: space-around;
 			align-items: center;
-			height: 125px;
+			height: 70px;
 			display: flex;
 
 			margin: 0px 20px 10px 0px;
 			& .footer__text {
 				color: #fff;
 			}
-		}
-		@media (max-width: ($md4+px)) {
-			height: 90px;
 		}
 		@media (max-width: ($md6+px)) {
 			margin: 0px 10px 0px -10px;
@@ -448,6 +448,9 @@ header {
 	justify-content: space-around;
 	margin: 20px 0px 0px 0px;
 	flex-direction: column;
+	@media (max-width: ($md2+px)) {
+		margin: 10px 0px 0px 0px;
+	}
 	// @media (max-width: ($md5+px)) {
 	// 	flex-direction: column;
 	// 	margin: 10px 0px 0px 0px;

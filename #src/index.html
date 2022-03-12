@@ -5,217 +5,460 @@
 })
 
 <body>
-	<div id="top" class="wrapper">
-		<div class="wrapper-container">
-			@@include('_header.html',{})
-			<div class="page">
-				<div class="content  _container">
-					<div class="main_container">
-						<div class="main_column">
-							<aside id="expirience" class="aside-panel">
-								<section class="_section">
-									<h2>Experience</h2>
-									<p>I don't have relevant work experience, but I'm ready to learn. I finished the RSSchool
-										course
-										Stage#0 and I already have ready-made <a href="#projects">projects</a>.</p>
-								</section>
-								<section class="_section">
-									<h2>ECode</h2>
-									<div>
-										<pre class="pre-code"><code id="codeHljs" class="language-javascript hljs">
-function arithmetic(a, b, arif){
- 
- if(arif==="add"){
-return a+b
+  <div id="top" class="wrapper">
+    <div class="wrapper-container">
+      @@include('_header.html',{})
+      <div class="page">
+        <div class="content  _container">
+          <div class="main_container">
+            <div class="main_column">
+              <aside id="aboutMe" class="aside-panel">
+                <section class="about-me _section">
+                  <h2>About me</h2>
+                  <p>
+                    I am a dedicated Frontend Web Developer eager to contribute to team success through hard work,
+                    attention to detail, and excellent organizational skills. Motivated to learn, grow and excel in Web
+                    Development.
+                  </p>
+                </section>
+                <section id="education" class="_section">
+                  <h2>Education</h2>
+                  <p>
+                    I graduated from Kurgan State University with a degree in “Technosphere safety”.
+                  </p>
+
+                </section>
+                <section class="_section">
+                  <h2>Languages</h2>
+                  <ul class="lang-list ">
+                    <li class="lang-list_item">
+                      English A2
+                    </li>
+                    <li class="lang-list_item">
+                      Russian (native)
+                    </li>
+                  </ul>
+                </section>
+                <section class="_section">
+                  <h2>ECode</h2>
+                  <div>
+                    <pre class="pre-code"><code id="codeHljs" class="language-javascript hljs">
+Mutual Recursion
+JavaScript:
+
+function F(n) {
+  if(n===0){
+    return 1
+  }else{
+    return n-M(F(n - 1))
+  }   
 }
- if(arif==="subtract"){
-return a-b
-}    
- if(arif==="multiply"){
-return a*b
+
+function M(n) {
+  if(n===0){
+    return 0
+  }else{
+    return n-F(M(n - 1))
+  }   
 }
- if(arif==="divide"){
-return a/b
-}
- }
 		</code></pre>
-									</div>
-								</section>
-							</aside>
-							<main id="aboutMe">
-								<section class="about-me _section">
-									<h2>About me</h2>
-									<p>All my life I was looking towards IT technologies, for me it seemed that I was far from
-										this, although the computer accompanied me in all spheres of my life: school, university,
-										work and home. Self-development and moving forward desire pushed to study of frontend
-										development, so I became very happy when I finally realized, that programming is my
-										vocation, the dream of my whole life lies in. The main goal is motivation to learn new
-										technologies. I feel that the conquest of the world is getting closer every day ...</p>
-									<p>My <b>primary goal</b> is to become a front-end developer, and my <b>secondary
-											goal</b> is to become a lead developer.</p>
-									<h4 class="spoiler__click">Little histiory (spoiler - click here to open) </h4>
-									<p class="spoiler"> I graduated from Kurgan State University with a degree in “Technical and
-										Environmental Safety”. This specialty is not related with information technologies at all,
-										but all the time I was studying, I tried to automate my study with help of computer and
-										different programs, for example, formulas in Excel helped me to write my course works
-										quickly. Then I went to the army. In the army I had a goal to get to the rank of a junior
-										sergeant and my work in the army was directly related to the programs on computers. I
-										graduated from the army with the rank of junior sergeant. Next, when I came home, I took a
-										job as a safety engineer. This time I also had the goal of becoming an executive in my
-										field, and a year later I took a management position with an auditing company that
-										provided services to other companies.
-									</p>
-									<p class="spoiler">
-										Another six months later, I was hired by a fairly large energy company in the city, took
-										an executive position in my field, and supervised occupational safety specialists in eight
-										branches in different cities. My salary was above average in Russia, but at that point,
-										after several months of work, I realized that I don’t want to advance in this field of
-										work anymore. As it did not develop me in any way, I began to feel that I was standing
-										still, and suddenly it occurred to me to leave my job and find myself in something that
-										would bring pleasure, where I could learn new things and improve myself every day.
-									</p>
-									<p class="spoiler">
-										I started with web design and did a short 7-day marathon on creating a landing page, which
-										I finished, and learned how to use Photoshop. Since then I periodically draw something in
-										Photoshop for different projects. Next, I decided to get acquainted with the layout
-										(programming still seemed complicated for me, so I decided to start with something simple)
-										- and I did a 3-day marathon to create my own mini-page, written in HTML and CSS, after
-										writing the code in VS-code, I realized that this is what I am interested in. After a
-										while, my friend invited me to the HTML-Academy where I started to learn JavaScript, and I
-										liked it. I solved all the additional tasks in JS and passed all the subjects in a month,
-										and after that I was finally convinced that programming is what I want to devote my life
-										to. Sometimes I write code at night and I don't feel sleepy at all, but I’m trying to
-										watch over my health. Then I discovered learn.javascript.ru and accidentally found the
-										RSSchool course in the comments. I have now completed JS/FE PRE-SCHOOL Stage#0 and have
-										enrolled in JS/Frontend-development Stage#1. Now I can say with full confidence - I will
-										become a
-										programmer - it's only a matter of time.
-									</p>
-								</section>
-								<section id="education" class="_section">
-									<h2>Education</h2>
-									<p>
-										I'm a study in JavaScript, courses at <a href="https://htmlacademy.ru/courses" target="_blank"
-											rel="noopener noreferrer">HTML-Academy</a> and materials on the site <a
-											href="https://learn.javascript.ru/" target="_blank"
-											rel="noopener noreferrer">learn.javascript.ru</a>, do
-										tasks on <a href="https://www.codewars.com/users/ConstantineTU" target="_blank"
-											rel="noopener noreferrer">codewars</a>, and
-										now I'm an RSSchool student!
-									</p>
-									<p>My
-										<a class="sertificate" href="https://app.rs.school/certificate/9nsfw9ob"
-											target="_blank">sertificate</a>
-										RSSchool at Stage#0.
-									</p>
-								</section>
-								<section class="_section">
-									<h2>English</h2>
-									<ul class="lang-list ">
-										<li class="lang-list_item">
-											Presumably: A1
-										</li>
-										<li class="lang-list_item">
-											Russian (native)
-										</li>
-									</ul>
-								</section>
-							</main>
-						</div>
-						<section id="video" class="video _section">
-							<h2>Self - introduction video</h2>
-							<iframe src="https://www.youtube.com/embed/Dn9QJ9Ut6AE" title="YouTube video player"
-								allowfullscreen></iframe>
-						</section>
-						<section id="projects" class="projects _section">
-							<h2>My projects</h2>
-							<div class="projects-wrap">
-								<span id="control-left" class="arrow-left"></span>
-								<div class="slider">
-									<div class="projects-items">
-										<div class="project-item active">
-											<a class="projects-link"
-												href="https://rolling-scopes-school.github.io/constantinetu-JSFEPRESCHOOL/whack-a-mole/"
-												target="_blank">
-												<article class="projects-item">
-													<div>
-														<h3 class="projects-item__title">Whack-A-Mole</h3>
-														<p class="projects-item__description"><b>Tech:</b> SCSS, Gulp, JS,
-															CSS-adaptive,
-															HTML5, BEM</p>
-														<p class="projects-item__description"><b>Description:</b> a game where you
-															need to whack a moles,
-															save
-															is
-															implemented in this game, you cannot miss otherwise you will lose the
-															hammer,
-															if
-															you
-															lose the hammers, you lose health. And there is also a store. Go to play!
-														</p>
-													</div>
-													<div class="projects-item__image">
-														<img src="img/projects/whack-a-mole.jpg" alt="whack-a-mole__picture" width="200">
-													</div>
-												</article>
-											</a>
-										</div>
-										<div class="project-item">
-											<a class="projects-link"
-												href="https://rolling-scopes-school.github.io/constantinetu-JSFEPRESCHOOL/drum-kit/"
-												target="_blank">
-												<article class="projects-item">
-													<div>
-														<h3 class="projects-item__title">Drum-kit</h3>
-														<p class="projects-item__description"><b>Tech:</b> SCSS, Gulp, JS, HTML5, BEM
-														</p>
-														<p class="projects-item__description"><b>Description:</b> Drum Kit is a music
-															application in which
-															you
-															can
-															play sounds by pressing the keys on the keyboard. Each key has its own
-															sound.
-														</p>
-													</div>
-													<div class="projects-item__image">
-														<img src="./img/projects/drum-kit.jpg" alt="Drum-kit__picture" width="200">
-													</div>
-												</article>
-											</a>
-										</div>
-										<div class="project-item">
-											<a class="projects-link"
-												href="https://rolling-scopes-school.github.io/constantinetu-JSFEPRESCHOOL/museum/"
-												target="_blank">
-												<article class="projects-item">
-													<div>
-														<h3 class="projects-item__title">Museum</h3>
-														<p class="projects-item__description"><b>Tech:</b> SCSS, Gulp, JS, HTML5, BEM
-														</p>
-														<p class="projects-item__description"><b>Description:</b> Landing page of the
-															Louvre - one of the most popular art museums in the world, this landing
-															page
-															was implemented at Stage
-															# 0, will be finalized at Stage # 1, stay tuned here. </p>
-													</div>
-													<div class="projects-item__image">
-														<img src="img/projects/museum.jpg" alt="Museum__picture" width="200">
-													</div>
-												</article>
-											</a>
-										</div>
-									</div>
-								</div>
-								<span id="control-right" class="arrow-right"></span>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-			@@include('_footer.html',{})
-		</div>
-	</div>
-	<script src="js/app.min.js"></script>
+                  </div>
+                </section>
+
+              </aside>
+              <main class="main" id="expirience">
+                <section class="_section">
+                  <h2>Experience</h2>
+                  <h3>EPAM courses - RS School</h3>
+                  <p class="bold">Performed various tasks under the guidance of a
+                    mentor from EPAM.</p>
+                  <div class="exp-element">
+                    <h4>SPA RSLang</h4>
+                    <ul class="points">
+                      <li class="point">- Teamwork</li>
+                      <li class="point">- TypeScript</li>
+                      <li class="point">- React, React Hooks, React Router, React Redux</li>
+                      <li class="point">- HTML5, BEM</li>
+                      <li class="point">- SCSS Modules, CSS grid, CSS3 animations</li>
+                      <li class="point">- Local Storage</li>
+                      <li class="point">- Async coding / Promises, fetch, REST API, Audio API, DOM Api</li>
+                      <li class="point">- JS Animations</li>
+                      <li class="point">- ESLint & Prettier</li>
+                      <li class="point">- Modules in JavaScript</li>
+                      <li class="point">- Webpack</li>
+                      <li class="point">- Mobile adaptivity</li>
+                    </ul>
+                    <div class="exp__links">
+                      <div class="exp-link">
+                        <a href="https://constantinetu-rslang.netlify.app/" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="15">
+                          <b>App link</b></a>
+                      </div>
+                      <div class="exp-link">
+                        <a href="https://github.com/ConstantineTU/rslang/tree/develop" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="17">
+                          <b>GitHub link</b></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exp-element">
+                    <h4>SPA Christmas</h4>
+                    <ul class="points">
+                      <li class="point">- TypeScript</li>
+                      <li class="point">- React, React Hooks</li>
+                      <li class="point">- HTML5, BEM</li>
+                      <li class="point">- SCSS Modules, CSS grid, CSS3 animations</li>
+                      <li class="point">- Local Storage</li>
+                      <li class="point">- JSON</li>
+                      <li class="point">- Async coding / Promises, Audio API, DOM Api</li>
+                      <li class="point">- Drag and Drop API</li>
+                      <li class="point">- ESLint & Prettier</li>
+                      <li class="point">- Modules in JavaScript</li>
+                      <li class="point">- Webpack</li>
+                      <li class="point">- Mobile adaptivity</li>
+                      <li class="point">- Multiple filtering/sorting, search</li>
+                    </ul>
+                    <div class="exp__links">
+                      <div class="exp-link">
+                        <a href="https://constantinetu-christmas.netlify.app/" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="15">
+
+                          <b>App link</b></a>
+                      </div>
+                      <div class="exp-link">
+                        <a href="https://github.com/ConstantineTU/Christmas" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="17">
+                          <b>GitHub link</b></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exp-element">
+                    <h4>App Momentum</h4>
+                    <ul class="points">
+                      <li class="point">- JavaScript</li>
+                      <li class="point">- HTML5, BEM</li>
+                      <li class="point">- SCSS, CSS grid, CSS3 animations</li>
+                      <li class="point">- Local Storage</li>
+                      <li class="point">- Async coding / Promises, JSON, Audio API</li>
+                      <li class="point">- Unsplash API, Flickr API, OpenWeather API,</li>
+                      <li class="point">- JS Animations</li>
+                      <li class="point">- Date</li>
+                      <li class="point">- ESLint & Prettier</li>
+                      <li class="point">- Modules in JavaScript</li>
+                      <li class="point">- Gulp</li>
+                      <li class="point">- Mobile adaptivity</li>
+                      <li class="point">- RU/ENG languages, bookmark links, todo list, audio player</li>
+                    </ul>
+                    <div class="exp__links">
+                      <div class="exp-link">
+                        <a href="https://constantinetu-momentum.netlify.app/" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="15">
+                          <b>App
+                            link</b></a>
+                      </div>
+                      <div class="exp-link">
+                        <a href="https://github.com/ConstantineTU/Momentum" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="17">
+                          <b>GitHub
+                            link</b></a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </main>
+            </div>
+            <section id="projects" class="welcome section">
+              <h2 class="projects-item__title">Projects</h2>
+              <div class="welcome-carousel">
+                <div class="welcome-carousel_container">
+                  <div class="welcome-carousel-item active">
+                    <div class="welcome-carousel-item-img">
+                      <img src="img/projects/Momentum2zon.webp" alt="1">
+                    </div>
+                    <div class="projects-item__description-wrap">
+                      <div class="projects-item__description-container">
+                        <div class="projects-item__description-wrapper">
+                          <h3 class="projects-item__title">Momentum</h3>
+                          <p class="projects-item__description"><b>Tech:</b>
+                            JavaScript,
+                            SCSS/SASS,
+                            CSS3 animations,
+                            HTML5,
+                            BEM,
+                            Gulp,
+                            Local Storage,
+                            Date,
+                            Unsplash API,
+                            Flickr API,
+                            OpenWeather API,
+                            Audio API,
+                            JSON,
+                            Async coding / Promises,
+                            Mobile adaptivity
+                          </p>
+                          <p class="projects-item__description hide2"><b>App features:</b>
+                            Settings, RU/ENG languages, bookmark links, todo list, audio player, quote
+                            generator, clock and date, greeting, background image change
+                          </p>
+                          <p class="projects-item__description hide"><b>Description:</b> This project is a copy of
+                            the Google Chrome extension Momentum.
+                            Focus app, make a to-do list, save bookmarks, check the weather and listen to music!
+                          </p>
+                          <div class="projects-item__links">
+                            <div class="projects-item__links-link">
+                              <a href="https://constantinetu-momentum.netlify.app/" target="_blank">
+                                <img class="projects-item__links-img" src="img/icons/contacts/url.svg" width="30"
+                                  alt="">
+                                App link</a>
+                            </div>
+                            <div class="projects-item__links-link">
+                              <a href="https://github.com/ConstantineTU/Momentum" target="_blank">
+                                <img class="projects-item__links-img" src="img/header/header-footer/github.svg"
+                                  width="35" alt="">
+                                GitHub link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="welcome-carousel-item">
+                    <div class="welcome-carousel-item-img">
+                      <img src="img/projects/Art-Quiz3zon.webp" alt="2">
+                    </div>
+                    <div class="projects-item__description-wrap">
+                      <div class="projects-item__description-container">
+                        <div class="projects-item__description-wrapper">
+                          <h3 class="projects-item__title">Art-Quiz</h3>
+                          <p class="projects-item__description"><b>Tech:</b>
+                            SPA,
+                            JavaScript (Classes),
+                            SCSS/SASS,
+                            HTML5,
+                            BEM,
+                            CSS3 Animations,
+                            Webpack,
+                            OOP,
+                            Modules in JavaScript,
+                            Audio API,
+                            Local Storage,
+                            JSON,
+                            Async coding / Promises,
+                            ESLint,
+                            Prettier,
+                            Mobile adaptivity
+                          </p>
+                          <p class="projects-item__description hide2"><b>App features:</b>
+                            Settings, quiz, time game, sound accompaniment
+                          </p>
+                          <p class="projects-item__description hide"><b>Description:</b> This is a quiz game in which
+                            you have to guess paintings or authors. In this project, I first used JS Classes and
+                            the SPA/OOP approach and Webpack.
+                          </p>
+                          <div class="projects-item__links">
+                            <div class="projects-item__links-link">
+                              <a href="https://constantinetu-art-quiz.netlify.app/" target="_blank">
+                                <img class="projects-item__links-img" src="img/icons/contacts/url.svg" width="30"
+                                  alt="">
+                                App link</a>
+                            </div>
+                            <div class="projects-item__links-link">
+                              <a href="https://github.com/ConstantineTU/Art-Quiz" target="_blank">
+                                <img class="projects-item__links-img" src="img/header/header-footer/github.svg"
+                                  width="35" alt="">
+                                GitHub link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="welcome-carousel-item">
+                    <div class="welcome-carousel-item-img">
+                      <img src="img/projects/Christmas2zon.webp" alt="3">
+                    </div>
+                    <div class="projects-item__description-wrap">
+                      <div class="projects-item__description-container">
+                        <div class="projects-item__description-wrapper">
+                          <h3 class="projects-item__title">Christmas</h3>
+                          <p class="projects-item__description"><b>Tech:</b>
+                            SPA,
+                            TypeScript,
+                            React,
+                            React Hooks,
+                            React-snowfall,
+                            SCSS Modules,
+                            Drag&Drop API,
+                            Audio API,
+                            Webpack,
+                            CSS3 Animations,
+                            BEM,
+                            Modules in JavaScript,
+                            Local Storage,
+                            JSON,
+                            Async coding / Promises,
+                            ESLint,
+                            Prettier,
+                            Mobile adaptivity
+                          </p>
+                          <p class="projects-item__description hide2"><b>App features:</b>
+                            Multiple filtering, range-filters, reset, sorting, search, selection of toys to
+                            favorites, you can choose: Christmas tree, background; hang/remove toys;
+                            on/off: garland, snow, music
+                          </p>
+                          <p class="projects-item__description hide"><b>Description:</b> It's a game called grandma's
+                            toys. Your task is to choose toys, you can sort them by year of purchase and name, as
+                            well as filter by shape, color, year of purchase, size and favorite grandmother toys .
+                          </p>
+                          <div class="projects-item__links">
+                            <div class="projects-item__links-link">
+                              <a href="https://constantinetu-christmas.netlify.app/" target="_blank">
+                                <img class="projects-item__links-img" src="img/icons/contacts/url.svg" width="30"
+                                  alt="">
+                                App link</a>
+                            </div>
+                            <div class="projects-item__links-link">
+                              <a href="https://github.com/ConstantineTU/Christmas" target="_blank">
+                                <img class="projects-item__links-img" src="img/header/header-footer/github.svg"
+                                  width="35" alt="">
+                                GitHub link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="welcome-carousel-item">
+                    <div class="welcome-carousel-item-img">
+                      <img src="img/projects/Museum2zon.webp" alt="4">
+                    </div>
+                    <div class="projects-item__description-wrap">
+                      <div class="projects-item__description-container">
+                        <div class="projects-item__description-wrapper">
+                          <h3 class="projects-item__title">Louvre</h3>
+                          <p class="projects-item__description"><b>Tech:</b>
+                            JavaScript,
+                            HTML5,
+                            BEM,
+                            SCSS/SASS,
+                            Gulp,
+                            Local Storage,
+                            Video API,
+                            YouTube API,
+                            Mapbox API,
+                            Date,
+                            Mobile adaptivity
+                          </p>
+                          <p class="projects-item__description hide2"><b>App features:</b>
+                            Slider images, comparison slider, custom video player, popup images, buying tickets,
+                            cost сalculator, form validation, parallax, location map
+                          </p>
+                          <p class="projects-item__description hide"><b>Description:</b> Landing-page Louvre is a copy
+                            of the official website of the Louvre Museum, which is located in France
+                          </p>
+                          <div class="projects-item__links">
+                            <div class="projects-item__links-link">
+                              <a href="https://constantinetu-louvre.netlify.app/" target="_blank">
+                                <img class="projects-item__links-img" src="img/icons/contacts/url.svg" width="30"
+                                  alt="">
+                                App link</a>
+                            </div>
+                            <div class="projects-item__links-link">
+                              <a href="https://github.com/ConstantineTU/Louvre" target="_blank">
+                                <img class="projects-item__links-img" src="img/header/header-footer/github.svg"
+                                  width="35" alt="">
+                                GitHub link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="welcome-carousel-item">
+                    <div class="welcome-carousel-item-img">
+                      <img src="img/projects/RSLang3zon.webp" alt="5">
+                    </div>
+                    <div class="projects-item__description-wrap">
+                      <div class="projects-item__description-container">
+                        <div class="projects-item__description-wrapper">
+                          <h3 class="projects-item__title">RSLang</h3>
+                          <p class="projects-item__description"><b>Tech:</b>
+                            SPA,
+                            TypeScript,
+                            React (Hooks, Redux, Router)
+                            SCSS Modules,
+                            Audio API,
+                            Webpack,
+                            CSS3 Animations,
+                            BEM,
+                            Modules in JavaScript,
+                            Local Storage,
+                            fetch, REST API, DOM Api,
+                            Async coding / Promises,
+                            ESLint,
+                            Prettier,
+                            Mobile adaptivity
+                          </p>
+                          <p class="projects-item__description hide2"><b>App features:</b>
+                            Registration/Authorisation, fullscreen, Electronic textbook (3600 words), 6 sections
+                            of difficulty, audition, statistics: correct / incorrect words, new words, percentage
+                            of correct answers: saving data to the server, two games for learning words, timer,
+                            sound accompaniment, game results
+                          </p>
+                          <p class="projects-item__description hide"><b>Description:</b> Application for learning
+                            English words. Play minigames, listen to pronunciation, improve your knowledge. Is
+                            free. On any device.
+                          </p>
+                          <div class="projects-item__links">
+                            <div class="projects-item__links-link">
+                              <a href="https://constantinetu-rslang.netlify.app/" target="_blank">
+                                <img class="projects-item__links-img" src="img/icons/contacts/url.svg" width="30"
+                                  alt="">
+                                App link</a>
+                            </div>
+                            <div class="projects-item__links-link">
+                              <a href="https://github.com/ConstantineTU/rslang" target="_blank">
+                                <img class="projects-item__links-img" src="img/header/header-footer/github.svg"
+                                  width="35" alt="">
+                                GitHub link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="welcome-slider">
+                <div class="welcome-slider__wrap">
+                  <p class="welcome-slider__counters">
+                    <span class="welcome-slider__counter-left">01</span>
+                    |
+                    <span class="welcome-slider__counter-right">05</span>
+                  </p>
+                  <div class="welcome-slider__items-container">
+                    <ul class="welcome-slider__items">
+                      <li data-value="0" id="welcomeBullet-1" class="welcome-slider__item active"></li>
+                      <li data-value="1" id="welcomeBullet-2" class="welcome-slider__item"></li>
+                      <li data-value="2" id="welcomeBullet-3" class="welcome-slider__item"></li>
+                      <li data-value="3" id="welcomeBullet-4" class="welcome-slider__item"></li>
+                      <li data-value="4" id="welcomeBullet-5" class="welcome-slider__item"></li>
+                    </ul>
+                  </div>
+                  <div class="welcome-slider__arrows">
+                    <button class="welcome-slider__arrows-left welcome__button-slider"></button>
+                    <button class="welcome-slider__arrows-right welcome__button-slider"></button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      @@include('_footer.html',{})
+    </div>
+  </div>
+  <script src="js/app.min.js"></script>
 
 </body>
 
