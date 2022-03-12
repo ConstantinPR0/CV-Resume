@@ -10,7 +10,7 @@
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;family=Roboto:wght@400;500;700&amp;display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/magula.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github-dark.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
 	<script>hljs.highlightAll();</script>
@@ -48,15 +48,15 @@
 								</div>
 							</a>
 						</li>
-						<li class="item"><a href="mailto:kos2598@mail.ru" target="_blank">
+						<li class="item"><a href="mailto:8kozmo8@gmail.com" target="_blank">
 								<div class="item_text">
 									<img src="img/icons/contacts/mail.svg" alt="E-mail" width="40">
 								</div>
 							</a>
 						</li>
-						<li class="item"><a href="tel:+79195627270">
+						<li class="item"><a href="https://t.me/TerentyevKY">
 								<div class="item_text">
-									<img src="img/icons/contacts/whatsapp.svg" alt="Whatsapp" width="40">
+									<img src="img/icons/contacts/telegram.svg" alt="Telegram" width="40">
 								</div>
 							</a>
 						</li>
@@ -76,7 +76,7 @@
 					</div>
 					<div class="footer-body__column">
 						<a href="https://rs.school/js/" class="footer__logo" target="_blank">
-							<img src="img/header/header-footer/rs-logo.svg" alt="rs-logo"></a>
+							<img src="img/header/header-footer/rs-logo-white.svg" alt="rs-logo"></a>
 					</div>
 				</div>
 			</div>
@@ -303,23 +303,17 @@
                   <h2>ECode</h2>
                   <div>
                     <pre class="pre-code"><code id="codeHljs" class="language-javascript hljs">
-Mutual Recursion
-JavaScript:
-
-function F(n) {
-  if(n===0){
-    return 1
-  }else{
-    return n-M(F(n - 1))
-  }   
+// filename generator
+function generateName() {
+let uniq = '';
+const s='ABCDEFGIJKLMNUQ';
+let i = 1;
+for (; i <= 6; i++) {
+uniq += 
+s[Math.floor(Math.random() 
+* s.length)];
 }
-
-function M(n) {
-  if(n===0){
-    return 0
-  }else{
-    return n-F(M(n - 1))
-  }   
+return uniq;
 }
 		</code></pre>
                   </div>
@@ -434,6 +428,19 @@ function M(n) {
                   <div class="welcome-carousel-item active">
                     <div class="welcome-carousel-item-img">
                       <img src="img/projects/Momentum2zon.webp" alt="1">
+                      <div class="projects-item__links upimg">
+                        <div class="projects-item__links-link">
+                          <a href="https://constantinetu-momentum.netlify.app/" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="30"
+                              alt="">
+                          </a>
+                        </div>
+                        <div class="projects-item__links-link">
+                          <a href="https://github.com/ConstantineTU/Momentum" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="35" alt="">
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div class="projects-item__description-wrap">
                       <div class="projects-item__description-container">
@@ -486,6 +493,19 @@ function M(n) {
                     <div class="welcome-carousel-item-img">
                       <img src="img/projects/Art-Quiz3zon.webp" alt="2">
                     </div>
+                    <div class="projects-item__links upimg min">
+                      <div class="projects-item__links-link">
+                        <a href="https://constantinetu-art-quiz.netlify.app/" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="30"
+                            alt="">
+                        </a>
+                      </div>
+                      <div class="projects-item__links-link">
+                        <a href="https://github.com/ConstantineTU/Art-Quiz" target="_blank">
+                          <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="35" alt="">
+                        </a>
+                      </div>
+                    </div>
                     <div class="projects-item__description-wrap">
                       <div class="projects-item__description-container">
                         <div class="projects-item__description-wrapper">
@@ -536,6 +556,19 @@ function M(n) {
                   <div class="welcome-carousel-item">
                     <div class="welcome-carousel-item-img">
                       <img src="img/projects/Christmas2zon.webp" alt="3">
+                      <div class="projects-item__links upimg">
+                        <div class="projects-item__links-link">
+                          <a href="https://constantinetu-christmas.netlify.app/" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="30"
+                              alt="">
+                          </a>
+                        </div>
+                        <div class="projects-item__links-link">
+                          <a href="https://github.com/ConstantineTU/Christmas" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="35" alt="">
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div class="projects-item__description-wrap">
                       <div class="projects-item__description-container">
@@ -591,6 +624,19 @@ function M(n) {
                   <div class="welcome-carousel-item">
                     <div class="welcome-carousel-item-img">
                       <img src="img/projects/Museum2zon.webp" alt="4">
+                      <div class="projects-item__links upimg">
+                        <div class="projects-item__links-link">
+                          <a href="https://constantinetu-louvre.netlify.app/" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="30"
+                              alt="">
+                          </a>
+                        </div>
+                        <div class="projects-item__links-link">
+                          <a href="https://github.com/ConstantineTU/Louvre" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="35" alt="">
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div class="projects-item__description-wrap">
                       <div class="projects-item__description-container">
@@ -637,6 +683,19 @@ function M(n) {
                   <div class="welcome-carousel-item">
                     <div class="welcome-carousel-item-img">
                       <img src="img/projects/RSLang3zon.webp" alt="5">
+                      <div class="projects-item__links upimg">
+                        <div class="projects-item__links-link">
+                          <a href="https://constantinetu-rslang.netlify.app/" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/url-black.svg" width="30"
+                              alt="">
+                          </a>
+                        </div>
+                        <div class="projects-item__links-link">
+                          <a href="https://github.com/ConstantineTU/rslang" target="_blank">
+                            <img class="projects-item__links-img" src="img/icons/contacts/github.svg" width="35" alt="">
+                          </a>
+                        </div>
+                      </div>
                     </div>
                     <div class="projects-item__description-wrap">
                       <div class="projects-item__description-container">

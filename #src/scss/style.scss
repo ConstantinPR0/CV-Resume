@@ -222,7 +222,7 @@ html {
 	max-width: 320px;
 	@media (max-width: ($md2 + px)) {
 		margin: 0px 10px 0px 0px;
-		width: 40%;
+		width: 45%;
 	}
 	@media (max-width: ($md3 + px)) {
 		margin: 0px 10px 0px 0px;
@@ -430,7 +430,7 @@ html {
 			margin: 0px 0px 15px 0px;
 			font-size: 18px;
 			line-height: 22px;
-			@media (max-width: ($md3 + px)) {
+			@media (max-width: (750 + px)) {
 				font-size: 16px;
 				line-height: 18px;
 			}
@@ -462,7 +462,7 @@ html {
 				margin: 0px 20px 0px;
 				height: 100%;
 
-				@media (max-width: ($md3 + px)) {
+				@media (max-width: (750 + px)) {
 					margin: 0px 10px 0px;
 				}
 				@media (max-width: (650px)) {
@@ -500,6 +500,30 @@ html {
 			display: flex;
 			justify-content: space-around;
 			align-items: flex-end;
+			&.upimg {
+				display: none;
+				position: absolute;
+				justify-content: space-between;
+				bottom: 10px;
+				left: 0px;
+				width: 100%;
+				opacity: 0.4;
+				&.min {
+					width: 50%;
+				}
+				@media (max-width: ( 580 + px)) {
+					display: flex;
+				}
+				& .projects-item__links-link {
+					margin: 0px 10px 0px 10px;
+				}
+				& a {
+					color: #000;
+				}
+				& img {
+					height: 30px;
+				}
+			}
 			&-link {
 				& a {
 					display: flex;
